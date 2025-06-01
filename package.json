@@ -1,0 +1,34 @@
+{
+  "name": "movie-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "lucide-react": "^0.263.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.0",
+    "gh-pages": "^6.3.0",
+    "vite": "^5.4.19"
+  },
+  "description": "Movie Analytics Dashboard with Ratings and Trend Analysis",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragosubtil/movie-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragosubtil/movie-dashboard/issues"
+  },
+  "homepage": "https://github.com/dragosubtil/movie-dashboard#readme"
+}
