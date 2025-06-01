@@ -17,7 +17,55 @@ const mockMovies = [
   { id: 12, title: "Spirited Away", year: 2001, genre: "Animation", rating: 8.6, budget: 19, revenue: 395.8, director: "Hayao Miyazaki", runtime: 125 },
   { id: 13, title: "The Green Mile", year: 1999, genre: "Drama", rating: 8.6, budget: 60, revenue: 286.8, director: "Frank Darabont", runtime: 189 },
   { id: 14, title: "Parasite", year: 2019, genre: "Thriller", rating: 8.5, budget: 11.4, revenue: 258.7, director: "Bong Joon-ho", runtime: 132 },
-  { id: 15, title: "The Lion King", year: 1994, genre: "Animation", rating: 8.5, budget: 45, revenue: 968.5, director: "Roger Allers", runtime: 88 }
+  { id: 15, title: "The Lion King", year: 1994, genre: "Animation", rating: 8.5, budget: 45, revenue: 968.5, director: "Roger Allers", runtime: 88 },
+  { id: 16, title: "Schindler's List", year: 1993, genre: "Biography", rating: 8.9, budget: 22, revenue: 321.2, director: "Steven Spielberg", runtime: 195 },
+  { id: 17, title: "Fight Club", year: 1999, genre: "Drama", rating: 8.8, budget: 63, revenue: 100.9, director: "David Fincher", runtime: 139 },
+  { id: 18, title: "The Lord of the Rings 1", year: 2001, genre: "Adventure", rating: 8.8, budget: 93, revenue: 871.5, director: "Peter Jackson", runtime: 178 },
+  { id: 19, title: "The Lord of the Rings 3", year: 2003, genre: "Adventure", rating: 8.9, budget: 94, revenue: 1120.2, director: "Peter Jackson", runtime: 201 },
+  { id: 20, title: "The Good, the Bad and the Ugly", year: 1966, genre: "Western", rating: 8.8, budget: 1.2, revenue: 38.9, director: "Sergio Leone", runtime: 178 },
+  { id: 21, title: "Seven Samurai", year: 1954, genre: "Action", rating: 8.6, budget: 0.5, revenue: 3.5, director: "Akira Kurosawa", runtime: 207 },
+  { id: 22, title: "City of God", year: 2002, genre: "Crime", rating: 8.6, budget: 3.3, revenue: 30.6, director: "Fernando Meirelles", runtime: 130 },
+  { id: 23, title: "Se7en", year: 1995, genre: "Crime", rating: 8.6, budget: 33, revenue: 327.3, director: "David Fincher", runtime: 127 },
+  { id: 24, title: "The Usual Suspects", year: 1995, genre: "Crime", rating: 8.5, budget: 6, revenue: 34.4, director: "Bryan Singer", runtime: 106 },
+  { id: 25, title: "Life Is Beautiful", year: 1997, genre: "Comedy", rating: 8.6, budget: 20, revenue: 229.2, director: "Roberto Benigni", runtime: 116 },
+  { id: 26, title: "Saving Private Ryan", year: 1998, genre: "Drama", rating: 8.6, budget: 70, revenue: 482.3, director: "Steven Spielberg", runtime: 169 },
+  { id: 27, title: "The Pianist", year: 2002, genre: "Biography", rating: 8.5, budget: 35, revenue: 120.1, director: "Roman Polanski", runtime: 150 },
+  { id: 28, title: "Gladiator", year: 2000, genre: "Action", rating: 8.5, budget: 103, revenue: 460.5, director: "Ridley Scott", runtime: 155 },
+  { id: 29, title: "The Departed", year: 2006, genre: "Crime", rating: 8.5, budget: 90, revenue: 291.5, director: "Martin Scorsese", runtime: 151 },
+  { id: 30, title: "Whiplash", year: 2014, genre: "Drama", rating: 8.5, budget: 3.3, revenue: 49.0, director: "Damien Chazelle", runtime: 106 },
+  { id: 31, title: "The Prestige", year: 2006, genre: "Drama", rating: 8.5, budget: 40, revenue: 109.7, director: "Christopher Nolan", runtime: 130 },
+  { id: 32, title: "Memento", year: 2000, genre: "Mystery", rating: 8.4, budget: 9, revenue: 39.7, director: "Christopher Nolan", runtime: 113 },
+  { id: 33, title: "Casablanca", year: 1942, genre: "Drama", rating: 8.5, budget: 1.0, revenue: 3.7, director: "Michael Curtiz", runtime: 102 },
+  { id: 34, title: "Apocalypse Now", year: 1979, genre: "Drama", rating: 8.4, budget: 31.5, revenue: 150.0, director: "Francis Ford Coppola", runtime: 147 },
+  { id: 35, title: "Rear Window", year: 1954, genre: "Mystery", rating: 8.4, budget: 1.0, revenue: 36.8, director: "Alfred Hitchcock", runtime: 112 },
+  { id: 36, title: "Raiders of the Lost Ark", year: 1981, genre: "Action", rating: 8.4, budget: 18, revenue: 389.9, director: "Steven Spielberg", runtime: 115 },
+  { id: 37, title: "Django Unchained", year: 2012, genre: "Drama", rating: 8.4, budget: 100, revenue: 425.4, director: "Quentin Tarantino", runtime: 165 },
+  { id: 38, title: "The Shining", year: 1980, genre: "Horror", rating: 8.4, budget: 19, revenue: 44.0, director: "Stanley Kubrick", runtime: 146 },
+  { id: 39, title: "WALL·E", year: 2008, genre: "Animation", rating: 8.4, budget: 180, revenue: 521.3, director: "Andrew Stanton", runtime: 98 },
+  { id: 40, title: "American Beauty", year: 1999, genre: "Drama", rating: 8.3, budget: 15, revenue: 356.3, director: "Sam Mendes", runtime: 122 },
+  { id: 41, title: "The Social Network", year: 2010, genre: "Biography", rating: 7.7, budget: 40, revenue: 224.9, director: "David Fincher", runtime: 120 },
+  { id: 43, title: "No Country for Old Men", year: 2007, genre: "Crime", rating: 8.1, budget: 25, revenue: 171.6, director: "Coen Brothers", runtime: 122 },
+  { id: 44, title: "The Big Lebowski", year: 1998, genre: "Comedy", rating: 8.1, budget: 15, revenue: 46.7, director: "Coen Brothers", runtime: 117 },
+  { id: 46, title: "Oldboy", year: 2003, genre: "Action", rating: 8.4, budget: 3.0, revenue: 15.0, director: "Park Chan-wook", runtime: 120 },
+  { id: 47, title: "Amélie", year: 2001, genre: "Comedy", rating: 8.3, budget: 10, revenue: 173.9, director: "Jean-Pierre Jeunet", runtime: 122 },
+  { id: 48, title: "Taxi Driver", year: 1976, genre: "Crime", rating: 8.2, budget: 1.9, revenue: 28.6, director: "Martin Scorsese", runtime: 114 },
+  { id: 49, title: "Scarface", year: 1983, genre: "Crime", rating: 8.3, budget: 25, revenue: 65.9, director: "Brian De Palma", runtime: 170 },
+  { id: 50, title: "Toy Story", year: 1995, genre: "Animation", rating: 8.3, budget: 30, revenue: 373.6, director: "John Lasseter", runtime: 81 },
+  { id: 51, title: "Mad Max: Fury Road", year: 2015, genre: "Action", rating: 8.1, budget: 150, revenue: 378.9, director: "George Miller", runtime: 120 },
+  { id: 52, title: "The Revenant", year: 2015, genre: "Adventure", rating: 8.0, budget: 135, revenue: 532.9, director: "Alejandro G. Iñárritu", runtime: 156 },
+  { id: 53, title: "La La Land", year: 2016, genre: "Comedy", rating: 8.0, budget: 30, revenue: 446.1, director: "Damien Chazelle", runtime: 128 },
+  { id: 54, title: "Arrival", year: 2016, genre: "Drama", rating: 7.9, budget: 47, revenue: 203.4, director: "Denis Villeneuve", runtime: 116 },
+  { id: 55, title: "Get Out", year: 2017, genre: "Horror", rating: 7.7, budget: 4.5, revenue: 255.4, director: "Jordan Peele", runtime: 104 },
+  { id: 56, title: "Joker", year: 2019, genre: "Crime", rating: 8.4, budget: 55, revenue: 1074.3, director: "Todd Phillips", runtime: 122 },
+  { id: 57, title: "1917", year: 2019, genre: "War", rating: 8.3, budget: 95, revenue: 384.6, director: "Sam Mendes", runtime: 119 },
+  { id: 58, title: "Barbie", year: 2023, genre: "Comedy", rating: 7.0, budget: 145, revenue: 1446.2, director: "Greta Gerwig", runtime: 114 },
+  { id: 59, title: "Tenet", year: 2020, genre: "Action", rating: 7.5, budget: 200, revenue: 363.7, director: "Christopher Nolan", runtime: 150 },
+  { id: 60, title: "Nomadland", year: 2020, genre: "Drama", rating: 7.3, budget: 5, revenue: 39.4, director: "Chloé Zhao", runtime: 108 },
+  { id: 61, title: "Dune", year: 2021, genre: "Sci-Fi", rating: 8.0, budget: 165, revenue: 401.8, director: "Denis Villeneuve", runtime: 155 },
+  { id: 62, title: "The Batman", year: 2022, genre: "Action", rating: 7.9, budget: 185, revenue: 770.8, director: "Matt Reeves", runtime: 176 },
+  { id: 63, title: "Everything Everywhere All at Once", year: 2022, genre: "Action", rating: 8.0, budget: 25, revenue: 103.1, director: "Daniel Kwan", runtime: 139 },
+  { id: 64, title: "Top Gun: Maverick", year: 2022, genre: "Action", rating: 8.3, budget: 170, revenue: 1486.7, director: "Joseph Kosinski", runtime: 130 },
+  { id: 65, title: "Oppenheimer", year: 2023, genre: "Biography", rating: 8.5, budget: 100, revenue: 950.2, director: "Christopher Nolan", runtime: 180 }
 ];
 
 const COLORS = ['#2563eb', '#7c3aed', '#dc2626', '#f59e0b', '#10b981', '#6366f1'];
@@ -28,6 +76,9 @@ const MovieExplorerDashboard = () => {
   const [genreFilter, setGenreFilter] = useState('All');
   const [yearRange, setYearRange] = useState([1970, 2025]);
   const [ratingFilter, setRatingFilter] = useState(8.0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const moviesPerPage = 10;
+  const [budgetChartPage, setBudgetChartPage] = useState(0);
 
   const filteredMovies = useMemo(() => {
     return mockMovies.filter(movie => {
@@ -197,8 +248,8 @@ const MovieExplorerDashboard = () => {
               type="range" 
               min="1970" 
               max="2025" 
-              value={yearRange[1]}
-              onChange={(e) => setYearRange([yearRange[0], parseInt(e.target.value)])}
+              value={yearRange[0]}
+              onChange={(e) => setYearRange([parseInt(e.target.value), yearRange[1]])}
               className="w-full"
             />
           </div>
@@ -236,20 +287,63 @@ const MovieExplorerDashboard = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredMovies.map(movie => (
-                    <tr 
-                      key={movie.id} 
-                      onClick={() => setSelectedMovie(movie)}
-                      className="border-b hover:bg-gray-50 cursor-pointer transition-colors"
-                    >
-                      <td className="py-2">{movie.title}</td>
-                      <td className="py-2">{movie.year}</td>
-                      <td className="py-2">{movie.rating}</td>
-                      <td className="py-2">{movie.genre}</td>
-                    </tr>
+                  {filteredMovies
+                    .slice((currentPage - 1) * moviesPerPage, currentPage * moviesPerPage)
+                    .map(movie => (
+                      <tr 
+                        key={movie.id} 
+                        onClick={() => setSelectedMovie(movie)}
+                        className="border-b hover:bg-gray-50 cursor-pointer transition-colors"
+                      >
+                        <td className="py-2">{movie.title}</td>
+                        <td className="py-2">{movie.year}</td>
+                        <td className="py-2">{movie.rating}</td>
+                        <td className="py-2">{movie.genre}</td>
+                      </tr>
                   ))}
                 </tbody>
               </table>
+              
+              {/* Pagination Controls */}
+              <div className="flex items-center justify-between mt-4 pt-3 border-t">
+                <div className="text-sm text-gray-600">
+                  Showing {Math.min(filteredMovies.length, 10)} of {filteredMovies.length} movies
+                </div>
+                <div className="flex space-x-2">
+                  <button 
+                    onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                    disabled={currentPage === 1}
+                    className={`p-2 rounded-full ${currentPage === 1 
+                      ? 'text-gray-400 cursor-not-allowed' 
+                      : 'text-blue-600 hover:bg-blue-100'}`}
+                    aria-label="Previous Page"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                  
+                  <span className="px-3 py-1 bg-gray-100 rounded-md text-sm">
+                    {currentPage} / {Math.ceil(filteredMovies.length / moviesPerPage)}
+                  </span>
+                  
+                  <button 
+                    onClick={() => setCurrentPage(prev => 
+                      prev < Math.ceil(filteredMovies.length / moviesPerPage) ? prev + 1 : prev
+                    )}
+                    disabled={currentPage >= Math.ceil(filteredMovies.length / moviesPerPage)}
+                    className={`p-2 rounded-full ${
+                      currentPage >= Math.ceil(filteredMovies.length / moviesPerPage)
+                        ? 'text-gray-400 cursor-not-allowed' 
+                        : 'text-blue-600 hover:bg-blue-100'}`}
+                    aria-label="Next Page"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -269,6 +363,7 @@ const MovieExplorerDashboard = () => {
                   cy="50%"
                   outerRadius={100}
                   label={({genre, count}) => `${genre}: ${count}`}
+                  labelLine={false}
                 >
                   {genreData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -283,14 +378,53 @@ const MovieExplorerDashboard = () => {
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-xl font-bold mb-4 text-gray-800">Rating vs Runtime</h2>
             <ResponsiveContainer width="100%" height={300}>
-              <ScatterChart>
+              <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="x" name="Runtime" unit=" min" />
-                <YAxis dataKey="y" name="Rating" domain={[8, 10]} />
-                <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+                <XAxis 
+                  dataKey="x" 
+                  name="Runtime" 
+                  unit=" min" 
+                  type="number" 
+                  domain={['dataMin-10', 'dataMax+10']}
+                  tickCount={8}
+                />
+                <YAxis 
+                  dataKey="y" 
+                  name="Rating"
+                  domain={[7, 10]} 
+                  tickCount={7}
+                />
+                <Tooltip 
+                  cursor={{ strokeDasharray: '3 3' }}
+                  formatter={(value, name, props) => {
+                    if (name === "x") return [`${value} min`, "Runtime"];
+                    if (name === "y") return [value, "Rating"];
+                    return [value, name];
+                  }}
+                  contentStyle={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                    borderRadius: '6px',
+                    padding: '8px 12px',
+                    border: '1px solid #e2e8f0',
+                    boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
+                  }}
+                  content={({ active, payload }) => {
+                    if (active && payload && payload.length) {
+                      const data = payload[0].payload;
+                      return (
+                        <div className="bg-white p-2 border border-gray-200 shadow-md rounded-md">
+                          <p className="font-bold text-gray-900 mb-1">{data.title}</p>
+                          <p className="text-sm">Runtime: <span className="font-semibold">{data.x} min</span></p>
+                          <p className="text-sm">Rating: <span className="font-semibold">{data.y}</span></p>
+                        </div>
+                      );
+                    }
+                    return null;
+                  }}
+                />
                 <Scatter 
                   name="Movies" 
-                  data={ratingRuntimeData} 
+                  data={ratingRuntimeData.sort((a, b) => a.x - b.x)} 
                   fill="#2563eb"
                   onClick={(data) => {
                     const movie = filteredMovies.find(m => m.title === data.title);
@@ -308,12 +442,58 @@ const MovieExplorerDashboard = () => {
           {/* Budget vs Revenue */}
           <div className="bg-white rounded-lg shadow-lg p-6 lg:col-span-2">
             <h2 className="text-xl font-bold mb-4 text-gray-800">Budget vs Revenue Analysis</h2>
+            {/* Chart navigation controls */}
+            <div className="flex justify-end mb-2">
+              <div className="flex items-center space-x-4">
+                <span className="text-sm text-gray-500">
+                  Showing {budgetChartPage * 10 + 1}-{Math.min((budgetChartPage + 1) * 10, budgetRevenueData.length)} of {budgetRevenueData.length}
+                </span>
+                <div className="flex space-x-2">
+                  <button 
+                    onClick={() => setBudgetChartPage(prev => Math.max(0, prev - 1))}
+                    disabled={budgetChartPage === 0}
+                    className={`p-2 rounded-full ${budgetChartPage === 0 
+                      ? 'text-gray-400 cursor-not-allowed' 
+                      : 'text-blue-600 hover:bg-blue-100'}`}
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                  
+                  <button 
+                    onClick={() => setBudgetChartPage(prev => prev + 1)}
+                    disabled={budgetChartPage >= Math.floor(budgetRevenueData.length / 10)}
+                    className={`p-2 rounded-full ${
+                      budgetChartPage >= Math.floor(budgetRevenueData.length / 10)
+                        ? 'text-gray-400 cursor-not-allowed' 
+                        : 'text-blue-600 hover:bg-blue-100'}`}
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
             <ResponsiveContainer width="100%" height={400}>
-              <BarChart data={budgetRevenueData}>
+              <BarChart data={budgetRevenueData
+                .sort((a, b) => b.revenue - a.revenue)
+                .slice(budgetChartPage * 10, (budgetChartPage + 1) * 10)}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="title" angle={-45} textAnchor="end" height={100} />
+                <XAxis 
+                  dataKey="title" 
+                  angle={0} 
+                  textAnchor="middle" 
+                  height={130}
+                  tick={{
+                    fontSize: 12,
+                    dy: 10,
+                    dx: -5
+                  }}
+                />
                 <YAxis label={{ value: 'Amount (Million $)', angle: -90, position: 'insideLeft' }} />
-                <Tooltip />
+                <Tooltip formatter={(value) => `$${value}M`} />
                 <Legend />
                 <Bar dataKey="budget" fill="#dc2626" name="Budget" />
                 <Bar dataKey="revenue" fill="#10b981" name="Revenue" />
