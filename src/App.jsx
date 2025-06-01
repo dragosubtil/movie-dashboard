@@ -64,8 +64,7 @@ const mockMovies = [
   { id: 61, title: "Dune", year: 2021, genre: "Sci-Fi", rating: 8.0, budget: 165, revenue: 401.8, director: "Denis Villeneuve", runtime: 155 },
   { id: 62, title: "The Batman", year: 2022, genre: "Action", rating: 7.9, budget: 185, revenue: 770.8, director: "Matt Reeves", runtime: 176 },
   { id: 63, title: "Everything Everywhere All at Once", year: 2022, genre: "Action", rating: 8.0, budget: 25, revenue: 103.1, director: "Daniel Kwan", runtime: 139 },
-  { id: 64, title: "Top Gun: Maverick", year: 2022, genre: "Action", rating: 8.3, budget: 170, revenue: 1486.7, director: "Joseph Kosinski", runtime: 130 },
-  { id: 65, title: "Oppenheimer", year: 2023, genre: "Biography", rating: 8.5, budget: 100, revenue: 950.2, director: "Christopher Nolan", runtime: 180 }
+  { id: 64, title: "Top Gun: Maverick", year: 2022, genre: "Action", rating: 8.3, budget: 170, revenue: 1486.7, director: "Joseph Kosinski", runtime: 130 }
 ];
 
 const COLORS = ['#2563eb', '#7c3aed', '#dc2626', '#f59e0b', '#10b981', '#6366f1'];
